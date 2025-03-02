@@ -29,7 +29,8 @@ Here I will show you the necessary steps / prerequisites to correctly installing
 <h2>Installation Steps</h2>
 
 <p>
-https://i.imgur.com/lZVJ7CK.png
+![image](https://github.com/user-attachments/assets/7acc2a99-3ac9-4121-9929-54ef1fa76cae)
+
 </p>
 <p>
 After you have logged into your VM, go ahead and download the files below. These zip files are essential for osTicket installation. 
