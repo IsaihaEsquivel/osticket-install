@@ -29,7 +29,7 @@ Here I will show you the necessary steps / prerequisites to correctly installing
 <h2>Installation Steps</h2>
 
 <p>
-![image](https://github.com/user-attachments/assets/7acc2a99-3ac9-4121-9929-54ef1fa76cae)
+pic
 
 </p>
 <p>
@@ -40,7 +40,7 @@ Next, press the folder icon on the download tab > right click the file > extract
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Now you will need to press the windows symbol on your desktop and head to the Control Panel. Press Uninstall a program > press Turn windows features on or off > Check the box next to "Internet Information Services" > hit the "+" next to IIS > hit the "+" next to world wide web services > hit the "+" next to application devlopment features > check the box next to CGI and hit OK.
@@ -49,7 +49,7 @@ The web server will now be installed.
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Go ahead and open up the osTicket files we extracted earlier. Press php manager > hit next > hit agree > hit close > now go back to the files and hit the rewrite amd > install and hit finish
@@ -57,81 +57,80 @@ Go ahead and open up the osTicket files we extracted earlier. Press php manager 
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
  It's time to create the PHP directory. File explorer > C drive > create a new folder on this drive called PHP 
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Go back to the extracted files right click "php 7.3.8" and extract files > hit browse > c drive > select PHP folder > extract. Now you should be able to see all the files within the PHP file.
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Head back to the osTicket files, now hit the "VC_redist file". Then agree and install.
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Installing mySQL. Head to the files > hit "mysql" > install > typical > Launch > next > standard config > now it will ask you for the user and password > after you have entered that info hit next > execute > Finish
 </p>
 <br />
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Hit the desktop windows icon and head to IIS. Run as admin > PHP manager > Register new PHP version > hit the three dots > go to C drive and find the PHP CGI file > OK and install 
 </p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Press the osticket-vm on the far left. You can either right click and start / stop, or press stop and start on the right side, Either will work. 
 </p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Head back to the osTicket files and select the osTicket v1 file so we can extract all. It may take a few seconds to finish. Head to c drive > inetpub > wwwroot > drag the "Upload" file to the "iistart" files > let them copy > and rename upload to "osTicket" > Go back to IIS and stop / start the server again  
 </p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 While you are still in IIS, look under osTicket vm and hit "sites" > default site > osTicket > hit "browse" on the far right > You should now be redirected to the osTicket site. We're almost there!
 </p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Go back to IIS > default site > osTicket > php manager > hit enable or disable extension > enable "php_imap" , "php_intll" , "php_opcache" > then refresh osTicket site
 </p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Go ahead and go back to the wwwroot folder > osTicket > hit include > find "ost-sampleconfig.php" and rename it to "ost-config.php" > right click it and head to properties > security > advanced > disable inheritance > remove all inherited permissions > add > select principal > add your selected user and check full control > OK > Apply > OK 
 </p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 You can finally go back to the osTicket website and press continue. Setup helpdesk name and email > fill in admin user info
 </p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+pic
 <p>
 <!- Just a few more things to do :). Go back to the osTicket > install folders. Install "HeidiSQL" > accept terms > hit next and install > Finish > open Heidi > new+ > enter the password you selected earlier when creating the user > open > right click the doplhin > create new > database > name it "osTicket" > OK > 
 </p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Head back to the osTicket site to finish the setup. Add "osTicket" under MySQL database > enter SQL username and password > hit install now!
 </p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
 </p>
 <p>
 Congratulations you have sucessfully installed osTicket!!! :) 
 </p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+pic
